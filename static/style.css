@@ -98,6 +98,21 @@ body{
     left: 50%;
 }
 
-#aboutme .col-lg-6{
+#aboutme .col-lg-6 {
     text-align: center;
+}
+
+#aboutme #carcont{
+    display: block;
+    padding: 10%;
+    width: 50%;
+}
+
+#aboutme #car{
+    display: block;
+    position: relative;
+}
+
+#aboutme #car img{
+    width: 100%;
 }
