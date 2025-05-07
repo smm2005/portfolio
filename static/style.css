@@ -70,11 +70,11 @@ body{
     width: 50%;
 }
 
-.content #captions > h3{
+.content #intro h3{
     opacity: 0.5;
 }
 
-.content #captions > h3:hover{
+.content #intro h3:hover{
     opacity: 1;
     transition: opacity 0.25s ease-out;
 }
@@ -85,15 +85,19 @@ body{
     text-align: center;
 }
 
-.content #intropics{
-    display: inline-block;
-    padding: 1%;
-    width: 50%;
-}
-
-.content #intropics img{
+.content #intro img{
     display: inline-block;
     padding: 1%;
     width: 30%;
     height: 100%;
+}
+
+.col-lg-6 #wonderland {
+    display: flex;
+    width: 50%;
+    left: 50%;
+}
+
+#aboutme .col-lg-6{
+    text-align: center;
 }
