@@ -8,3 +8,4 @@ app.use(express.static('static'));
 app.listen(port, hostname, ()=>{
     console.log(`Listening to app on http://${hostname}:${port}/`);
 });
+

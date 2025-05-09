@@ -116,3 +116,8 @@ body{
 #aboutme #car img{
     width: 100%;
 }
+
+#skills a{
+    text-align: center;
+    text-decoration: none;
+}

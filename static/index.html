@@ -81,21 +81,44 @@
                         </div>
                     </div>
                 </div>
-                <div id="skills">
-                    <div id="languages">
+                <div class="row" id="skills">
+                    <button class="col-lg-2 links" onClick="openTab(event, 'languages')">Languages</button>
+                    <button class="col-lg-2 links" onClick="openTab(event, 'tools')">Tools</a>
+                    <button class="col-lg-2 links" onClick="openTab(event, 'modules')">Modules</a>
+                    <button class="col-lg-2 links" onClick="openTab(event, 'webdev')">Web Development</a>
+                </div>
+                <script>
+                    function openTab(event, tab) {
+                        var content = document.getElementsByClassName('tabcontent');
+                        for (const elem of content){
+                            elem.style.display = 'none';
+                        }
+
+                        var links = document.getElementsByClassName('links');
+                        for (const elem of links){
+                            elem.className = elem.className.replace(' active', '');
+                        }
+
+                        document.getElementById(tab).style.display = 'block';
+                        event.currentTarget.className += " active";
+                    }
+                </script>
+                <div class="row">
+                    <div id="languages" class="tabcontent">
                         <p>Python, Java, JavaScript, C, C++, PHP</p>
                     </div>
-                    <div id="tools">
+                    <div id="tools" class="tabcontent">
                         <p>VS Code, PowerShell, Git, GitHub, Linux, Bash, MySQL</p>
                     </div>
-                    <div id="modules">
+                    <div id="modules" class="tabcontent">
                         <p>OpenCV, Arduino, jQuery</p>
                     </div>
-                    <div id="webdev">
+                    <div id="webdev" class="tabcontent">
                         <p>HTML, CSS, React.js, Node.js, Express.js, Flask</p>
                     </div>
                 </div>
-                <div id="projects">
+                </div>
+                <div class="row" id="projects">
                 </div>
                 <div id="experience">
                     <ul>
