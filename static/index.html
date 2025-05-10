@@ -82,7 +82,7 @@
                     </div>
                 </div>
                 <div class="row" id="skills">
-                    <button class="col-lg-2 links" id="defaultTab" onClick="openTab(event, 'languages')">Languages</button>
+                    <button class="col-lg-2 links" onClick="openTab(event, 'languages')" id="defaultTab">Languages</button>
                     <button class="col-lg-2 links" onClick="openTab(event, 'tools')">Tools</a>
                     <button class="col-lg-2 links" onClick="openTab(event, 'modules')">Modules</a>
                     <button class="col-lg-2 links" onClick="openTab(event, 'webdev')">Web Development</a>
@@ -103,7 +103,9 @@
                         event.currentTarget.className += " active";
                     }
 
-                    document.getElementById("defaultTab").click();
+                    document.addEventListener('DOMContentLoaded', () =>{
+                        document.getElementById("defaultTab").click();
+                    });
                 </script>
                 <div class="row">
                     <div id="languages" class="tabcontent">
