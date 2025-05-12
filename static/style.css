@@ -99,7 +99,19 @@ body{
 }
 
 #aboutme .col-lg-6 {
+    position: relative;
     text-align: center;
+    padding: 5%;
+}
+
+#aboutme .col-lg-6 h2 {
+    position: relative;
+    top: 10%;
+}
+
+#aboutme #paragraph{
+    position: relative;
+    top: 10%;
 }
 
 #aboutme #carcont{
@@ -117,19 +129,37 @@ body{
     width: 100%;
 }
 
-#skills button{
+#skills{
+    display: flex;
+    justify-content: space-between;
+}
+
+#skills a{
     text-align: center;
     text-decoration: none;
+    color: #000000;
     border: 0px;
 }
 
-#skills button:hover{
+#skills a:hover{
     background-color: black;
     color: orange;
     transition: background-color 0.25s ease-in-out;
 }
 
-#skills button:active{
+#skills a:active{
     background-color: black;
     color: orange;
+}
+
+#projects{
+    padding: 2%;
+}
+
+#projects .tab{
+    display: block;
+    padding-left: 5%;
+    padding-right: 5%;
+    border: 1px solid black;
+    border-radius: 20px;
 }
