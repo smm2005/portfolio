@@ -81,31 +81,11 @@
                     </div>
                 </div>
                 <div class="row" id="skills">
-                    <a class="col-lg-2 links" onClick="openTab(event, 'languages')" id="defaultTab">Languages</a>
-                    <a class="col-lg-2 links" onClick="openTab(event, 'tools')">Tools</a>
-                    <a class="col-lg-2 links" onClick="openTab(event, 'modules')">Modules</a>
-                    <a class="col-lg-2 links" onClick="openTab(event, 'webdev')">Web Development</a>
+                    <button class="col-lg-2 links" id="langs" type="button">Languages</button>
+                    <button class="col-lg-2 links" id="ts" type="button">Tools</button>
+                    <button class="col-lg-2 links" id="mods" type="button">Modules</button>
+                    <button class="col-lg-2 links" id="webdevb" >Web Development</button>
                 </div>
-                <script>
-                    function openTab(event, tab) {
-                        var content = document.getElementsByClassName('tabcontent');
-                        for (const elem of content){
-                            elem.style.display = 'none';
-                        }
-
-                        var links = document.getElementsByClassName('links');
-                        for (const elem of links){
-                            elem.className = elem.className.replace(' active', '');
-                        }
-
-                        document.getElementById(tab).style.display = 'block';
-                        event.currentTarget.className += " active";
-                    }
-
-                    document.addEventListener('DOMContentLoaded', () =>{
-                        document.getElementById("defaultTab").click();
-                    });
-                </script>
                 <div class="row">
                     <div id="languages" class="tabcontent">
                         <p>Python, Java, JavaScript, C, C++, PHP</p>
@@ -120,6 +100,7 @@
                         <p>HTML, CSS, React.js, Node.js, Express.js, Flask</p>
                     </div>
                 </div>
+                <script src="js/skills.js"></script>
                 </div>
                 <div class="row" id="projects">
                     <h2>Projects</h2>

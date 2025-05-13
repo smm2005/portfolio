@@ -134,20 +134,20 @@ body{
     justify-content: space-between;
 }
 
-#skills a{
+#skills button{
     text-align: center;
     text-decoration: none;
     color: #000000;
     border: 0px;
 }
 
-#skills a:hover{
+#skills button:hover{
     background-color: black;
     color: orange;
     transition: background-color 0.25s ease-in-out;
 }
 
-#skills a:active{
+#skills button:active{
     background-color: black;
     color: orange;
 }
