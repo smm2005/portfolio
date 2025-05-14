@@ -1,7 +1,7 @@
 var p = null;
 const projtag = document.getElementById("projects");
 
-const manipulate = () => {
+const createProjectTabs = () => {
     fetch("../projects.json")
     .then(response =>{
         if (!response.ok){
@@ -50,4 +50,4 @@ const manipulate = () => {
     .catch(error => console.log(`${error}: File is loaded incorrectly`));
 };
 
-manipulate();
+createProjectTabs();
