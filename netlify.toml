@@ -2,9 +2,3 @@
     external_node_modules = ["express"]
     included_files = ["static/**", "static/**.json"]
     node_bundler = "esbuild"
-
-[[redirects]]
-    from = "/static"
-    force=true
-    status=200
-    to = "/"
