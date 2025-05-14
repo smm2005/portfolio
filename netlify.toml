@@ -1,4 +1,4 @@
 [functions]
     external_node_modules = ["express"]
-    included_files = ["static/*"]
+    included_files = ["static/**"]
     node_bundler = "esbuild"
