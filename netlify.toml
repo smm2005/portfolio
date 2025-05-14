@@ -4,7 +4,7 @@
     node_bundler = "esbuild"
 
 [[redirects]]
-    from = "/static/"
-    to = "/"
+    from = "/static"
     force=true
     status=200
+    to = "/"
