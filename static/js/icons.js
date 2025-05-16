@@ -5,44 +5,59 @@ var w = ["html5", "css3", "react", "nodejs", "express", "flask"]
 
 var type = ["l", "t", "m", "w"];
 
+const re = /fill="#\w+"/gm
+
+const fetchSVG = (svg, id) => {
+    let vectorg = "";
+    fetch(svg)
+    .then(res => res.text())
+    .then(data => {
+        data = data.replace(re, "fill=#000000");
+        vectorg = data;
+        var container = document.createElement("div");
+        container.className = "icon";
+        container.innerHTML = vectorg;
+        document.getElementById(id).appendChild(container);
+    });
+    console.log(vectorg);
+}
+
 const imageMap = (type) => {
     switch (type){
         case "l":
             l.forEach(lang => {
-                var img = new Image();
-                img.src = `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${lang}/${lang}-plain.svg`;
-                document.getElementById("languages").appendChild(img);
+                var link = `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${lang}/${lang}-plain.svg`
+                fetchSVG(link, "languages");
             });
             break;
         case "t":
             t.forEach(tool => {
-                var img = new Image();
-                if (img === "mysql"){
-                    img.src = `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${tool}/${tool}-original.svg`;
+                if (tool === "mysql"){
+                    var link = `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${tool}/${tool}-original.svg`;
+                    fetchSVG(link, "tools");
                 }
                 else{
-                    img.src = `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${tool}/${tool}-plain.svg`;
+                    var link = `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${tool}/${tool}-plain.svg`;
+                    fetchSVG(link, "tools");
                 }
-                document.getElementById("tools").appendChild(img);
             });
             break;
         case "m":
             m.forEach(module => {
-                var img = new Image();
-                img.src = `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${module}/${module}-plain.svg`;
-                document.getElementById("modules").appendChild(img);
+                var link = `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${module}/${module}-plain.svg`;
+                fetchSVG(link, "modules");
             });
             break;
         case "w":
             w.forEach(dev => {
-                var img = new Image();
                 if (dev === "flask" || dev === "express" || dev === "react"){
-                    img.src = `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${dev}/${dev}-original.svg`;
+                    var link = `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${dev}/${dev}-original.svg`;
+                    fetchSVG(link, "webdev");
                 }
                 else{
-                    img.src = `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${dev}/${dev}-plain.svg`;
+                    var link = `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${dev}/${dev}-plain.svg`;
+                    fetchSVG(link, "webdev");
                 }
-                document.getElementById("webdev").appendChild(img);
             })
             break;
     }

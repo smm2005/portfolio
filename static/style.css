@@ -152,9 +152,9 @@ body{
     color: orange;
 }
 
-#skillicons img{
+#skillicons .icon{
+    display: inline-block;
     width: 5rem;
-    filter: invert(1);
 }
 
 #projects{
