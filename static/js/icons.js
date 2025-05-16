@@ -32,7 +32,7 @@ const imageMap = (type) => {
             break;
         case "t":
             t.forEach(tool => {
-                if (tool === "mysql"){
+                if (tool === "mysql" || tool === "github"){
                     var link = `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${tool}/${tool}-original.svg`;
                     fetchSVG(link, "tools");
                 }
