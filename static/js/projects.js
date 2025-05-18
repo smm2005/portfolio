@@ -50,4 +50,4 @@ const createProjectTabs = () => {
     .catch(error => console.log(`${error}: File is loaded incorrectly`));
 };
 
-createProjectTabs();
+document.addEventListener("DOMContentLoaded", ()=>{ createProjectTabs(); });
