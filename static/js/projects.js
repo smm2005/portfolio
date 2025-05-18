@@ -2,7 +2,7 @@ var p = null;
 const projtag = document.getElementById("projects");
 
 const createProjectTabs = () => {
-    fetch("../projects.json")
+    fetch("projects.json")
     .then(response =>{
         if (!response.ok){
             throw new Error(`Status ${response.status}`);
