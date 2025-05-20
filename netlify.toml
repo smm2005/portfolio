@@ -5,9 +5,3 @@
 [command]
     included_files = ["static/**", "static/**.json"]
     publish = "./site"
-
-[[redirects]]
-    from = "/static"
-    status = 200
-    force = true
-    to = "/.netlify/functions/app/:splat"

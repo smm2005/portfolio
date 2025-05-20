@@ -6,7 +6,7 @@ const hostname = "127.0.0.1";
 const port = process.env.PORT || 3000;
 const path = require('node:path');
 
-router.use("/static", express.static("static"));
+router.get("/static", express.static("static"));
 
 app.use('/app/', router);
 module.exports.handler = serverless(app);
