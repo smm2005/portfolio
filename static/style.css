@@ -184,23 +184,35 @@ body{
     text-align: center;
     text-decoration: none;
     color: #000000;
+    background-image: linear-gradient(lightgray, aliceblue);
     border: 0px;
 }
 
 #skills button:hover{
+    background-image: none;
     background-color: black;
     color: orange;
     transition: background-color 0.25s ease-in-out;
 }
 
 #skills button:focus{
+    background-image: none;
     background-color: black;
     color: orange;
 }
 
+#skillicons{
+    padding: 1%;
+}
+
 #skillicons .icon{
-    display: inline-block;
-    width: 5rem;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 10rem;
+    padding: 2%;
+    margin-right: 2rem;
+    border: 1px solid black;
+    border-radius: 50px;
 }
 
 #projects{
