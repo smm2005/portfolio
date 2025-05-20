@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000;
 
 app.use(express.static('static'));
 
-app.use("", router);
+app.use("/app/", router);
 module.exports.handler = serverless(app);
 
 app.listen(port, hostname, ()=>{
