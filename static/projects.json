@@ -4,7 +4,7 @@
             "name": "Personal Website",
             "path": "",
             "desc": "A portfolio showcasing who I am, what my skills are and how I apply them.",
-            "skills": "HTML, CSS, JavaScript (Node.js), Git"
+            "skills": "HTML, CSS, JavaScript, Node.js, Express.js, Git, Netlify CLI"
         },
         {
             "name": "Car Model Finder",
@@ -21,7 +21,7 @@
         {
             "name": "Chemical Equilibrium Simulator",
             "path": "img/projects_img/chemicaleq.png",
-            "desc": "Blah",
+            "desc": "A web application designed to simulate chemical equilibrium between reactants and products based on changing factors such as temperature, pressure and volume.",
             "skills": "HTML, CSS, JavaScript"
         }
     ]

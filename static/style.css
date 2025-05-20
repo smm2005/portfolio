@@ -177,20 +177,19 @@ body{
 
 #skills{
     display: flex;
-    justify-content: space-between;
 }
 
 #skills button{
     text-align: center;
     text-decoration: none;
     color: #000000;
-    background-image: linear-gradient(lightgray, aliceblue);
-    border: 0px;
+    border: 1px solid black;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
 }
 
 #skills button:hover{
-    background-image: none;
-    background-color: black;
+    background-image: linear-gradient(lightgray, aliceblue);
     color: orange;
     transition: background-color 0.25s ease-in-out;
 }
@@ -226,10 +225,8 @@ body{
     height: 125px;
 }
 
-#projects .tab{
-    display: block;
-    padding-left: 5%;
-    padding-right: 5%;
+#projects #tab{
+    display: flex;
     border: 1px solid black;
     border-radius: 20px;
 }

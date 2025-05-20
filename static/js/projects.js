@@ -13,13 +13,21 @@ const createProjectTabs = () => {
             p = data.projects;
             p.forEach(elem => {
                 var newTab = document.createElement("div");
-                newTab.className = "tab";
+                newTab.className = "row";
+                newTab.id = "tab";
                 
+                var imgTab = document.createElement("div");
+                imgTab.className = "col-lg-2"
+
+                var contentTab = document.createElement("div");
+                contentTab.className = "col-lg-10";
+
                 // Image creation
                 const img = new Image();
                 img.src = elem.path;
                 img.alt = elem.name;
-                newTab.appendChild(img);
+                imgTab.appendChild(img);
+                newTab.appendChild(imgTab);
 
                 // Link creation
                 const header = document.createElement("h4");
@@ -28,21 +36,22 @@ const createProjectTabs = () => {
                 link.href = "";
                 link.appendChild(linkText);
                 header.appendChild(link);
-                newTab.appendChild(header);
+                contentTab.appendChild(header);
 
                 // Description creation
                 const desc = document.createElement("p");
                 const description = document.createTextNode(elem.desc);
                 desc.appendChild(description);
-                newTab.appendChild(desc);
+                contentTab.appendChild(desc);
 
                 // Skills creation
                 const skills = document.createElement("p");
                 const skilltext = document.createTextNode("Used: ".concat(elem.skills));
                 skills.appendChild(skilltext);
-                newTab.appendChild(skills);
+                contentTab.appendChild(skills);
 
                 // Append to projects
+                newTab.appendChild(contentTab);
                 projtag.appendChild(newTab);
             });
             console.log(p);
