@@ -7,7 +7,7 @@
     publish = "./site"
 
 [[redirects]]
-    from = "/app/*"
+    from = "/static"
     status = 200
     force = true
     to = "/.netlify/functions/app/:splat"
