@@ -4,8 +4,11 @@ const router = express.Router();
 const serverless = require('serverless-http');
 const hostname = "127.0.0.1";
 const port = process.env.PORT || 3000;
+const path = require('node:path');
 
-app.use(express.static('static'), router);
+router.use("/static", express.static("static"));
+
+app.use('/app/', router);
 module.exports.handler = serverless(app);
 
 app.listen(port, hostname, ()=>{
