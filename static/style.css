@@ -175,6 +175,21 @@ body{
     width: 100%;
 }
 
+[class*="carousel-control-"]{
+    background-color: aliceblue;
+    color: black;
+}
+
+.carousel-inner{
+    width: auto;
+    max-width: 500px !important;
+    height:auto;
+    max-height: 480px !important;
+    overflow: hidden;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
 #skills{
     display: flex;
 }
@@ -207,11 +222,11 @@ body{
 #skillicons .icon{
     display: inline-flex;
     justify-content: space-between;
-    width: 10rem;
-    padding: 2%;
+    width: 5rem;
+    padding: 1%;
     margin-right: 2rem;
     border: 1px solid black;
-    border-radius: 50px;
+    border-radius: 10px;
 }
 
 #projects{
