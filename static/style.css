@@ -176,6 +176,9 @@ body{
 }
 
 [class*="carousel-control-"]{
+    width: auto;
+    height: auto;
+    margin: 0 auto;
     background-color: aliceblue;
     color: black;
 }
