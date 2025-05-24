@@ -205,32 +205,36 @@ body{
 }
 
 #skills{
-    display: flex;
+    padding: 2%;
 }
 
-#skills button{
+#skillsicons button{
     text-align: center;
     text-decoration: none;
     color: #000000;
     border: 1px solid black;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
+    position: relative;
+    display: block;
 }
 
-#skills button:hover{
+#skillicons button:hover{
     background-image: linear-gradient(lightgray, aliceblue);
     color: orange;
     transition: background-color 0.25s ease-in-out;
 }
 
-#skills button:focus{
+#skillicons button:focus{
     background-image: none;
     background-color: black;
     color: orange;
 }
 
 #skillicons{
-    padding: 1%;
+    display: block;
+    position: relative;
+    left: 3%;
 }
 
 #skillicons .icon{
@@ -241,6 +245,10 @@ body{
     margin-right: 2rem;
     border: 1px solid black;
     border-radius: 10px;
+}
+
+.tabcontent{
+    padding: 1%;
 }
 
 #projects{
