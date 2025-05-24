@@ -8,6 +8,11 @@ document.addEventListener("DOMContentLoaded", ()=>{
             hov.addEventListener("mouseout", ()=>{
                 hov.classList.add("unhovered");
                 hov.classList.remove("hovered");
+
+                setTimeout(()=>{
+                    hov.classList.add("hovered");
+                }, 5);
+
                 setTimeout(()=>{ hov.addEventListener("animationend", animationEnd()); }, 1000);
             });
 
