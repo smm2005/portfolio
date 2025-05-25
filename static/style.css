@@ -26,7 +26,7 @@ body{
     text-align: center;
     padding-top: 2%;
     padding-bottom: 2%;
-    background-image: linear-gradient(#000000, #1f1e1c);
+    background-image: linear-gradient(#4A7960, #799C77);
     font-size: 50px;
     color:azure;
     opacity: 85%;
@@ -137,7 +137,6 @@ body{
     height: 100%;
 }
 
-
 .col-lg-6 #wonderland {
     display: flex;
     width: 50%;
@@ -152,12 +151,12 @@ body{
 
 #aboutme .col-lg-6 h2 {
     position: relative;
-    top: 10%;
+    top: 25%;
 }
 
 #aboutme #paragraph{
     position: relative;
-    top: 10%;
+    top: 30%;
 }
 
 #aboutme #carcont{
@@ -220,15 +219,16 @@ body{
 }
 
 #skillicons button:hover{
-    background-image: linear-gradient(lightgray, aliceblue);
-    color: orange;
-    transition: background-color 0.25s ease-in-out;
+    background-color: black;
+    color: white;
+    transition: background-color 0.5s ease-out;
 }
+
 
 #skillicons button:focus{
     background-image: none;
     background-color: black;
-    color: orange;
+    color: white;
 }
 
 #skillicons{
