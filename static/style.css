@@ -1,8 +1,9 @@
 body{
     width: 100%;
     height: 100%;
-    font-family: "Poppins", sans-serif;
+    font-family: "Genos", sans-serif;
     font-weight: 400;
+    font-optical-sizing: auto;
     font-style: normal;
 }
 
@@ -15,46 +16,18 @@ body{
     background-repeat: no-repeat;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    background-image: linear-gradient(#000002, #001F34);
 }
 
-.header{
-    margin: 0 auto;
-}
-
-.header h1{
+#intro h1{
     position: relative;
-    text-align: center;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    background-image: linear-gradient(#4A7960, #799C77);
-    font-size: 50px;
+    text-align: left;
+    left: 50%;
+    top: 25%;
+    font-size: 125px;
     color:azure;
     opacity: 85%;
-}
-
-.nav{
-    margin: 0 auto;
-    width: 100%;
-    border-top: 2px solid aliceblue;
-    border-bottom: 2px solid aliceblue;
-    background-color: darkgray;
-}
-
-.nav a{
-    text-decoration: none;
-    color: #000000;
-}
-
-.nav a.hovered{
-    font-size: 25px;
-    animation: on 0.5s;
-    animation-fill-mode: forwards;
-}
-
-.nav a.unhovered{
-    font-size: 25px;
-    animation: away 0.5s;
-    animation-fill-mode: forwards;
+    line-height: 80px;
 }
 
 @keyframes on{
@@ -76,65 +49,38 @@ body{
 }
 
 
-.nav #navbar{
+#navbar{
+    display: block;
+    position: absolute;
     height: 10%;
     width: 100%;
-    padding-top: 1%;
-    display: flex;
-    justify-content: space-around;
+    top: 45%;
+    text-align: right;
 }
 
-.nav li{
+#navbar li{
     list-style: none;
     text-decoration: none;
     font-size: 20px;
 }
 
-.content #intro{
-    display: flex;
-    padding: 2%;
-    left: 20%;
-    width: 100%;
-    animation-name: intro_anim;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in;
+#navbar a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    right: 7%;
 }
 
-.content #captions{
-    display: inline-block;
-    padding: 2%;
-    left: 20%;
-    width: 50%;
+#navbar a.hovered{
+    font-size: 25px;
+    animation: on 0.5s;
+    animation-fill-mode: forwards;
 }
 
-.content #intro h3{
-    margin: 0 auto;
-    font-size: 80px;
-    text-align: center;
-    opacity: 0.5;
-}
-
-@keyframes intro_anim{
-    from{
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-
-.content #intro h3:hover{
-    opacity: 1;
-    transition: opacity 0.25s ease-out;
-}
-
-.content #intro img{
-    display: inline-block;
-    padding: 1%;
-    width: 30%;
-    height: 100%;
+#navbar a.unhovered{
+    font-size: 25px;
+    animation: away 0.5s;
+    animation-fill-mode: forwards;
 }
 
 .col-lg-6 #wonderland {
