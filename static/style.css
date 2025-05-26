@@ -98,11 +98,13 @@ body{
 #aboutme .col-lg-6 h2 {
     position: relative;
     top: 25%;
+    color: azure;
 }
 
 #aboutme #paragraph{
     position: relative;
     top: 30%;
+    color: azure;
 }
 
 #aboutme #carcont{
@@ -145,7 +147,7 @@ body{
     height:auto;
     max-height: 480px !important;
     overflow: hidden;
-    border: 2px solid black;
+    border: 2px solid azure;
     border-radius: 50px;
 }
 
@@ -189,7 +191,7 @@ body{
     width: 5rem;
     padding: 1%;
     margin-right: 2rem;
-    border: 1px solid black;
+    border: 1px solid #f0ffff;
     border-radius: 10px;
 }
 

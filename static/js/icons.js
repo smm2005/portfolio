@@ -12,7 +12,7 @@ const fetchSVG = (svg, id) => {
     fetch(svg)
     .then(res => res.text())
     .then(data => {
-        data = data.replace(re, "fill=#000000");
+        data = data.replace(re, "fill=#F0FFFF");
         vectorg = data;
         var container = document.createElement("div");
         container.className = "icon";
