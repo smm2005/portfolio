@@ -19,10 +19,13 @@ body{
     background-image: linear-gradient(#000002, #001F34);
 }
 
+#intro{
+    animation: anim 1s ease-out;
+}
+
 #intro h1{
     position: relative;
-    text-align: left;
-    left: 50%;
+    text-align: center;
     top: 25%;
     font-size: 125px;
     color:azure;
@@ -32,43 +35,52 @@ body{
 
 @keyframes on{
     from{
-        font-size: 20px;
+        font-size: 30px;
     }
     to{
-        font-size: 25px;
+        font-size: 35px;
     }
 }
 
 @keyframes away{
     from{
-        font-size: 25px;
+        font-size: 35px;
     }
     to{
-        font-size: 20px;
+        font-size: 30px;
     }
 }
 
+@keyframes anim{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
 
 #navbar{
-    display: block;
+    display: flex;
     position: absolute;
     height: 10%;
     width: 100%;
     top: 45%;
-    text-align: right;
+    justify-content: space-around;
 }
 
 #navbar li{
     list-style: none;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 #navbar a{
     position: relative;
     text-decoration: none;
     color: white;
-    right: 7%;
 }
 
 #navbar a.hovered{
