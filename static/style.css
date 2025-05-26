@@ -19,7 +19,9 @@ body{
     background-image: linear-gradient(#000002, #001F34);
 }
 
-#intro{
+.animate {
+    width: 100%;
+    height: 100%;
     animation: anim 1s ease-out;
 }
 
@@ -170,8 +172,8 @@ body{
 #skillsicons button{
     text-align: center;
     text-decoration: none;
-    color: #000000;
-    border: 1px solid black;
+    color: #f0ffff;
+    border: 1px solid #f0ffff;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     position: relative;
@@ -214,6 +216,7 @@ body{
 #projects{
     display: block;
     padding: 2%;
+    color: azure;
 }
 
 #projects img{
@@ -224,6 +227,7 @@ body{
 
 #projects #tab{
     display: flex;
+    color: azure;
     border: 1px solid black;
     border-radius: 20px;
 }
