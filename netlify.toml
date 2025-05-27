@@ -4,3 +4,9 @@
 
 [command]
     publish = "."
+
+[[redirects]]
+    from = "/static/*"
+    to = "/:splat"
+    force = true
+    status = 301
