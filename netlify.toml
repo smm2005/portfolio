@@ -3,7 +3,7 @@
     node_bundler = "esbuild"
 
 [command]
-    publish = "."
+    publish = "static"
 
 [[redirects]]
     from = "/static/*"
