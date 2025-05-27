@@ -8,7 +8,7 @@ const path = require('node:path');
 
 router.use(express.static("static"));
 
-app.use('/app/', router);
+app.use('/', router);
 module.exports.handler = serverless(app);
 
 app.listen(port, hostname, ()=>{

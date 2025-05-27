@@ -15,7 +15,6 @@ body{
     position: absolute;
     background-repeat: no-repeat;
     overflow-x: hidden;
-    overflow-y: hidden;
     scroll-behavior: smooth;
     background-image: linear-gradient(#000002, #001F34);
 }
@@ -167,38 +166,10 @@ body{
     border-radius: 50px;
 }
 
-#skills{
-    padding: 2%;
-}
-
-#skillsicons button{
-    text-align: center;
-    text-decoration: none;
-    color: #f0ffff;
-    border: 1px solid #f0ffff;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    position: relative;
-    display: block;
-}
-
-#skillicons button:hover{
-    background-color: black;
-    color: white;
-    transition: background-color 0.5s ease-out;
-}
-
-
-#skillicons button:focus{
-    background-image: none;
-    background-color: black;
-    color: white;
-}
-
-#skillicons{
-    display: block;
-    position: relative;
-    left: 3%;
+#skillicons h2{
+    color: azure;
+    width: 100%;
+    height: auto;
 }
 
 #skillicons .icon{
@@ -232,4 +203,10 @@ body{
     color: azure;
     border: 1px solid black;
     border-radius: 20px;
+}
+
+#back{
+    font-size: 50px;
+    text-decoration: none;
+    color: azure;
 }
