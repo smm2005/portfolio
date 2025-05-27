@@ -6,7 +6,13 @@
     publish = "static"
 
 [[redirects]]
-    from = "/static/*"
-    to = "/:splat"
+    from = "/*"
+    to = "/static/:splat"
+    force = true
+    status = 301
+
+[[redirects]]
+    from = "https://suhailmoeen.app"
+    to = "https://suhailmoeen.netlify.app"
     force = true
     status = 301
