@@ -33,7 +33,7 @@ const createProjectTabs = () => {
                 const header = document.createElement("h4");
                 const link = document.createElement("a");
                 const linkText = document.createTextNode(elem.name);
-                link.href = "";
+                link.href = elem.href;
                 link.appendChild(linkText);
                 header.appendChild(link);
                 contentTab.appendChild(header);
