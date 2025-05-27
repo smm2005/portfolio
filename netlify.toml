@@ -10,9 +10,3 @@
     to = "/static/:splat"
     force = true
     status = 301
-
-[[redirects]]
-    from = "https://suhailmoeen.app"
-    to = "https://suhailmoeen.netlify.app"
-    force = true
-    status = 301
