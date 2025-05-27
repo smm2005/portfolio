@@ -8,14 +8,10 @@ const path = require('node:path');
 
 router.use(express.static("static"));
 
-app.use('/', router);
+app.use('/app/', router);
 module.exports.handler = serverless(app);
 
-app.get('/', (req, res) => {
-
-});
-
 app.listen(port, hostname, ()=>{
-    console.log(`Listening to app on http://${hostname}:${port}/`);
+    console.log(`Listening to app on http://${hostname}:${port}/app/`);
 });
 

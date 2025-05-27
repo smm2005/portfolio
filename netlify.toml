@@ -3,5 +3,4 @@
     node_bundler = "esbuild"
 
 [command]
-    included_files = ["static/**", "static/**.json"]
-    publish = "./site"
+    publish = "."
