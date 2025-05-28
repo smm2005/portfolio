@@ -1,18 +1,28 @@
 var l = ["python", "java", "javascript", "c", "cplusplus"];
 var t = ["vscode", "powershell", "git", "github", "linux", "bash", "mysql"];
-var m = ["opencv", "arduino", "numpy"];
+var m = ["opencv", "numpy"];
 var w = ["html5", "css3", "react", "nodejs", "express", "flask", "bootstrap"]
 
 var type = ["l", "t", "m", "w"];
 
 const re = /fill="#\w+"/gm
+const re2 = /fill-rule="\w+"/gm
+const re3 = /d=/gm
 
 const fetchSVG = (svg, id) => {
     let vectorg = "";
     fetch(svg)
     .then(res => res.text())
     .then(data => {
-        data = data.replace(re, "fill=#F0FFFF");
+        if (data.search(re2) != -1){
+            data = data.replace(re2, "fill-rule=\"evenodd\" fill=#F0FFFF");
+        }
+        else if (data.search(re) != -1){
+            data = data.replace(re, "fill=#F0FFFF");
+        }
+        else{
+            data = data.replace(re3, "fill=#F0FFFF d=");
+        }
         vectorg = data;
         var container = document.createElement("div");
         container.className = "icon";
