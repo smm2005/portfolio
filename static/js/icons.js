@@ -1,7 +1,7 @@
 var l = ["python", "java", "javascript", "c", "cplusplus"];
 var t = ["vscode", "powershell", "git", "github", "linux", "bash", "mysql"];
 var m = ["opencv", "arduino", "numpy"];
-var w = ["html5", "css3", "react", "nodejs", "express", "flask"]
+var w = ["html5", "css3", "react", "nodejs", "express", "flask", "bootstrap"]
 
 var type = ["l", "t", "m", "w"];
 

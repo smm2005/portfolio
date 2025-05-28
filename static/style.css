@@ -35,6 +35,17 @@ body{
     line-height: 80px;
 }
 
+#intro h3{
+    position: relative;
+    text-align: center;
+    top: 25%;
+    padding: 10%;
+    color:azure;
+    opacity: 85%;
+    line-height: 80px;
+}
+
+
 @keyframes on{
     from{
         font-size: 30px;
