@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "node app/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "bundle": "esbuild app/index.js --bundle --platform=node --outfile=dist/bundle.js"
+    "bundle": "esbuild app/index.js --bundle --platform=node --outfile=dist/bundle.js",
+    "push": "git push && netlify build && netlify deploy --prod"
   },
   "keywords": [],
   "author": "",
