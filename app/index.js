@@ -12,6 +12,6 @@ app.use('/', router);
 module.exports.handler = serverless(app);
 
 app.listen(port, hostname, ()=>{
-    console.log(`Listening to app on http://${hostname}:${port}/app/`);
+    console.log(`Listening to app on http://${hostname}:${port}/`);
 });
 
