@@ -36,8 +36,14 @@ const imageMap = (type) => {
     switch (type){
         case "l":
             l.forEach(lang => {
-                var link = `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${lang}/${lang}-plain.svg`
-                fetchSVG(link, "languages");
+                if (lang === "c"){
+                    var link = `https://github.com/devicons/devicon/tree/v2.17.0/icons/${lang}/${lang}-plain.svg`;
+                    fetchSVG(link, "languages");
+                }
+                else{
+                    var link = `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${lang}/${lang}-plain.svg`
+                    fetchSVG(link, "languages");
+                }
             });
             break;
         case "t":
