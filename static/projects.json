@@ -1,6 +1,13 @@
 {
     "projects": [
         {
+            "name": "Movie Catalog Application",
+            "path": "img/projects_img/catalog.png",
+            "desc": "A movie cataloging application that makes use of a feature-vector system to recommend movies based on user favourites.",
+            "href": "https://github.com/smm2005/Movie-Catalog",
+            "skills": "React, Spring Boot, Bash, Java, JavaScript, PostgreSQL"
+        },
+        {
             "name": "Personal Website",
             "path": "img/projects_img/website.png",
             "desc": "A portfolio showcasing who I am, what my skills are and how I apply them.",
